@@ -1,0 +1,589 @@
+body{
+	margin: 0px;
+	font-family: sans-serif;
+	font: 30px;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Header Section */
+
+#body-header{
+	background-image: url(resumeheader.jpeg);
+	height: 65vh;
+	opacity: 0.8;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	padding-top: 1.2rem;
+}
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+.bars i {
+    font-size: 2rem;
+}
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+	padding: 0px 0.8rem;
+	text-align: left;
+}
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+.dropdown-list li{
+	margin: 0.4rem 0px;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.no-list-style{
+	list-style: none;
+}
+.no-list-style li {
+    font-weight: 100;
+    font-size: 1rem;
+}
+.no-list-style li a{
+	text-decoration: none;
+	color: white;
+}
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover {
+    color: lightgrey;
+}
+
+/* Name and Social handle Section*/
+.social-icon-list li a i{
+    padding: 10px;
+	font-size: 1.1rem;
+	border-radius: 50%;
+}
+.social-icon-list li a i:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.719);
+}
+#my-name{
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-size: 3.2rem;
+}
+#name-social-container{
+	margin-top: 20vh;
+}
+
+/* Sections */
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+section:nth-child(2n){
+	background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+.headings{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+	margin: 75px;
+}
+.headings span {
+    display: inline-block;
+    font-size: 40px;
+    color: #2857a4;
+    margin-right: 0.5rem;
+    padding-top: 10px;
+}
+
+/* About Me Section */
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+}
+#my-image{
+	width: 12rem;
+	height: 12rem;
+	margin: auto;
+	margin-top: -15vh;
+}
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 10px 2px lightgrey;
+	border: 3px solid white;
+}
+#about-me{
+	width: 70%;
+	text-align: justify;
+	line-height: 28px;
+	color: grey;
+	font-size: 1.1rem;
+	padding: 10px;
+	margin: auto;
+}
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+/* About Skills Section */
+#skills-display{
+	padding: 10px;
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	justify-content: space-evenly;
+}
+#skill-progress{
+	background-color: lightgrey;
+	border-radius: 1rem;
+	width: 11rem;
+	height: 2.2rem;
+	margin: 25px;
+	box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+	overflow: hidden;
+}
+#skill-progress > div{
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: 1px 1px 5px 2px #989882 inset;
+}
+#skill-name span{
+	color: white;
+	font-size: 1rem;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+/* Contact Section */
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+#contact-form {
+    margin-left: 20%;
+}
+#contact-container {
+	display: flex;
+}
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+#my-details-container p {
+	color: #d9dcdd;
+	font-size: 0.9rem;
+	text-align: justify;
+}
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+.my-details-info-container span {
+	margin-left: 0.4rem;
+}
+.my-details-info-container i {
+    color: white;
+}
+
+#contact-form-container {
+	width: 50%;
+}
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+#contact-form button:hover {
+	background: white;
+    color: #13386fe0;
+}
+#contact .social-icon-list li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px;
+	margin-bottom: 30px;
+	justify-content: space-evenly;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* portfolio */
+#portfolio-container{
+	padding: 0 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	justify-content: space-around;
+}
+.portfolio-image-container{
+	max-width: 300px;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 30px;
+}
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+	padding: 10px;
+	text-align: center;
+}
+.portfolio-details p {
+	font-size: 1.2rem;
+}
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #68676778;
+    color: white;
+}
+
+/* work experience */
+.timeline{
+	position: relative;
+	width: 75%;
+	/* border: 2px solid black; */
+}
+
+.timeline-box{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	/* border: 2px solid black; */
+	padding: 5px;
+	text-align: right;
+}
+
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+.timeline-box::after{
+	content: '';
+	position: absolute;
+	top: 25%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: rebeccapurple;
+	z-index: 1;
+}
+.timeline-box:nth-child(2n+1)::after{
+	right: -11%;
+}
+.timeline-box:nth-child(2n)::after{
+	left: -8%;
+}
+.timeline-container {
+    padding: 8px;
+}
+#timeline-divider{
+	border: 1px dashed lightskyblue;
+	position: absolute;
+	height: 66%;
+	width: 0;
+	left: 50%;
+	top: 10%;
+	color: #433E3F;
+}
+#timeline-divider .timeline-traveller{
+	position: sticky;
+	top: 135px;
+	z-index: 2;
+}
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+.timeline-logo {
+	position: absolute;
+    width: 50px;
+	overflow: hidden;
+}
+.timeline-logo > img {
+    width: 100%;
+}
+
+.experience-designation{
+	font-size: 1.4rem;
+}
+.experience-company{
+	margin: 5px 0 0;
+    font-size: 1.2rem;
+	color: #eb822d;
+	font-weight: 400;
+}
+.experience-duration{
+    font-size: 1rem;
+	color: rgb(134, 135, 138);
+	font-weight: 100;
+}
+.experience-description{
+	font-size: 14px;
+    padding: 2px;
+    color: grey;
+	line-height: 20px;
+}
+
+@media only screen and (max-width: 768px){
+	.timeline-box{
+		width: 80%;
+		left: 12%;
+	}
+	#timeline-divider{
+		left: 5%;
+	}
+	.timeline-box:nth-child(2n){
+		left: 12%;
+	}
+	.timeline-box:nth-child(2n+1)::after{
+		left: -9.3%;
+	}
+	.timeline-box:nth-child(2n)::after{
+		left: -9.3%;
+	}
+
+	#contact-form {
+        margin-left: 0%;
+    }
+	#contact-container{
+		flex-wrap: wrap;
+	}
+	#my-details-container {
+        width: 80%;
+        margin: 10%;
+	}
+	#contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }	
+}
+
+@media only screen and (max-width: 572px) {
+	/* #body-header{
+		height: 45vh;
+	} */
+	#my-image{
+		width: 8rem;
+		height: 8rem;
+		margin-top: -10vh;
+	}
+	#about-me{
+		width: 90%;
+	}
+
+	.portfolio-details p {
+		font-size: 1.1rem;
+	}
+
+    .timeline-box{
+		width: 90%;
+		left: 10%;
+	}
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box:nth-child(2n){
+		left: 10%;
+	}
+	.timeline-box:nth-child(2n+1)::after{
+		left: -6.2%;
+	}
+	.timeline-box:nth-child(2n)::after{
+		left: -6.2%;
+	}
+	
+    .bars {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+	} 
+	#name-social-container{
+		margin-top: 28vh;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.portfolio-details p {
+		font-size: 0.8rem;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.portfolio-details p {
+		font-size: 0.6rem;
+	}
+}
+@media only screen and (max-width: 332px) {
+	#name-social-container{
+		margin-top: 20vh;
+	}
+	.portfolio-details p {
+		font-size: 0.5rem;
+	}
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.m0 {
+    margin: 0;
+}
+.mb75px {
+    margin-bottom: 75px;
+}
+.mb50px {
+    margin-bottom: 50px;
+}
+.ml50px{
+	margin-left: 50px;
+}
+/*common color classes */
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+.m-blue {
+    color: #2857a4;
+}
+.mb-blue {
+    background-color: #2857a4;
+}
+.mb-orange {
+    background-color: #ec4d1c;
+}
+.mb-teal {
+    background-color: #0b8176;
+}
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+.p95-percent{
+	height: inherit;
+	width: 95%;
+}
+.p90-percent{
+	height: inherit;
+	width: 90%;
+}
+.p80-percent{
+	height: inherit;
+	width: 80%;
+}
+.p70-percent{
+	height: inherit;
+	width: 70%;
+}
+.p60-percent{
+	height: inherit;
+	width: 60%;
+}
+.p75-percent{
+	height: inherit;
+	width: 75%;
+}
+
+.m-blue{
+	color: #45669c;
+}
+.m-bold{
+	font-weight: 550;
+}
+.sup {
+	vertical-align: super;
+	font-size: 0.9rem;
+}
