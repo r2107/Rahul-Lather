@@ -182,10 +182,11 @@ section:nth-child(2n+1){
 	box-shadow: 1px 1px 5px 2px #989882 inset;
 }
 #skill-name span{
-	color: white;
-	font-size: 1rem;
-	vertical-align: middle;
-	margin-left: 10px;
+	color: #06191a;
+	font-size: 1.1rem;
+	display: inline-flex;
+	margin-top: 7px;
+	margin-left: 12px;
 }
 
 /* Contact Section */
@@ -540,16 +541,16 @@ button:focus {
     color: #2857a4;
 }
 .mb-blue {
-    background-color: #2857a4;
+    background-color: #23effa;
 }
 .mb-orange {
-    background-color: #ec4d1c;
+    background-color: #f5a742;
 }
 .mb-teal {
     background-color: #0b8176;
 }
-.mb-light-purple {
-    background-color: #93738c;
+.mb-green {
+    background-color: #40fa23;
 }
 
 .p95-percent{
